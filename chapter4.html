@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variable Names: Legal & Illegal | JavaScript</title>
+</head>
+<body>
+  <h1>Rules for naming JS variables</h1>
+
+  <p>
+    Variable names can only contain <b>letters</b>, <b>numbers</b>, <b>$</b> and <b>_</b>.<br>
+    For example: <b>$my_1stVariable</b>
+  </p>
+
+  <p>
+    Variables must begin with a <b>letter</b>, <b>$</b> or <b>_</b>.<br>
+    For example: <b>$name</b>, <b>_name</b> or <b>name</b>
+  </p>
+
+  <p>
+    Variable names are case <b>sensitive</b>
+  </p>
+
+  <p>
+    Variable names should not be JS <b>keywords</b>
+  </p>
+
+  <script>
+    // Answer 1: Declare 3 variables in one statement
+    let firstName = "John", age = 25, country = "USA";
+
+    // Answer 2: Declare 5 legal & 5 illegal variable names
+    let myName, $price, _value, user123, first_name;
+
+    // Answer 3: Display output in console
+    console.log("Variables declared in one statement:", firstName, age, country);
+    console.log("Legal variable names: myName, $price, _value, user123, first_name");
+    console.log("Illegal variable names: 123name, my-name, var, user name, @value");
+  </script>
+
+</body>
+</html>

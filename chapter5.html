@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clean JS Assignments</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h2 { color: navy; margin-top: 25px; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+        p { margin-left: 20px; line-height: 1.6; }
+        .result { font-weight: bold; color: #cc0000; }
+        hr { margin: 30px 0; }
+    </style>
+</head>
+<body>
+    
+    <script>
+        document.write(`<h2>Answer 1: Sum of Two Numbers</h2>`);
+        let num1 = 3;
+        let num2 = 5;
+        let sum = num1 + num2;
+        document.write(`<p>Sum of ${num1} and ${num2} is <span class="result">${sum}</span></p>`);
+        document.write(`<hr>`);
+        
+        document.write(`<h2>Answer 2: Basic Arithmetic Operations</h2>`);
+        let a = 10;
+        let b = 4;
+        let difference = a - b;
+        let product = a * b;
+        let quotient = a / b;
+        let remainder = a % b;
+        document.write(`<p>Subtraction: ${a} - ${b} = <span class="result">${difference}</span></p>`);
+        document.write(`<p>Multiplication: ${a} * ${b} = <span class="result">${product}</span></p>`);
+        document.write(`<p>Division: ${a} / ${b} = <span class="result">${quotient}</span></p>`);
+        document.write(`<p>Modulus (Remainder): ${a} % ${b} = <span class="result">${remainder}</span></p>`);
+        document.write(`<hr>`);
+
+        document.write(`<h2>Answer 3: Variable Operations</h2>`);
+        let myVariable;
+        document.write(`<p>Value after variable declaration is: <span class="result">${myVariable}</span></p>`); 
+        myVariable = 5;
+        document.write(`<p>Initial value: <span class="result">${myVariable}</span></p>`);
+        myVariable++; 
+        document.write(`<p>Value after increment is: <span class="result">${myVariable}</span></p>`);
+        myVariable += 7; 
+        document.write(`<p>Value after addition is: <span class="result">${myVariable}</span></p>`);
+        myVariable--; 
+        document.write(`<p>Value after decrement is: <span class="result">${myVariable}</span></p>`);
+        let remainderAfterDivision = myVariable % 3; 
+        document.write(`<p>The remainder is: <span class="result">${remainderAfterDivision}</span></p>`);
+        document.write(`<hr>`);
+        
+        document.write(`<h2>Answer 4: Movie Ticket Cost Calculation</h2>`);
+        const TICKET_PRICE = 600; 
+        const NUM_TICKETS = 5;
+        let totalCost = TICKET_PRICE * NUM_TICKETS;
+        document.write(`<p>Total cost to buy ${NUM_TICKETS} tickets to a movie is <span class="result">${totalCost}PKR</span></p>`);
+        document.write(`<hr>`);
+
+        document.write(`<h2>Answer 5: Multiplication Table of 4</h2>`);
+        let numberToMultiply = 4;
+        document.write(`<h3>Table of ${numberToMultiply}</h3>`);
+        for (let i = 1; i <= 10; i++) {
+            let result = numberToMultiply * i;
+            document.write(`<p>${numberToMultiply} x ${i} = <span class="result">${result}</span></p>`);
+        }
+        document.write(`<hr>`);
+        
+        document.write(`<h2>Answer 6: Temperature Converter</h2>`);
+        let celsiusTemp = 25;
+        let fahrenheitFromCelsius = (celsiusTemp * 9 / 5) + 32;
+        document.write(`<p><span class="result">${celsiusTemp}°C</span> is <span class="result">${fahrenheitFromCelsius}°F</span></p>`);
+        let fahrenheitTemp = 70;
+        let celsiusFromFahrenheit = (fahrenheitTemp - 32) * 5 / 9;
+        document.write(`<p><span class="result">${fahrenheitTemp}°F</span> is <span class="result">${celsiusFromFahrenheit.toFixed(14)}°C</span></p>`);
+        document.write(`<hr>`);
+        
+        document.write(`<h2>Answer 7: Shopping Cart Checkout Process</h2>`);
+        const priceItem1 = 650;
+        const priceItem2 = 100;
+        const quantityItem1 = 3;
+        const quantityItem2 = 7;
+        const shippingCharges = 100;
+        let costItem1 = priceItem1 * quantityItem1; 
+        let costItem2 = priceItem2 * quantityItem2; 
+        let subTotal = costItem1 + costItem2;
+        let totalCostWithShipping = subTotal + shippingCharges;
+        document.write(`<h3>Calculation Details</h3>`);
+        document.write(`<p>Cost of Item 1: ${priceItem1} x ${quantityItem1} = <span class="result">${costItem1}</span></p>`);
+        document.write(`<p>Cost of Item 2: ${priceItem2} x ${quantityItem2} = <span class="result">${costItem2}</span></p>`);
+        document.write(`<p>Shipping Charges: <span class="result">${shippingCharges}</span></p>`);
+        document.write(`<p>---</p>`);
+        document.write(`<p>Total Cost: <span class="result">${totalCostWithShipping}</span></p>`);
+        document.write(`<hr>`);
+        
+    </script>
+</body>
+</html>
